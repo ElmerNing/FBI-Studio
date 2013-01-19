@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78ECEAC2-72EC-4684-8232-F3FB8244C2F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FBI_Studio</RootNamespace>
+    <AssemblyName>FBI Studio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Studio\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Studio\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\ListViewNF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DLG\CutImageConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\CutImageConfig.Designer.cs">
+      <DependentUpon>CutImageConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLG\PjtConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\PjtConfigForm.Designer.cs">
+      <DependentUpon>PjtConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLG\PjtNameSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\PjtNameSetForm.Designer.cs">
+      <DependentUpon>PjtNameSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLG\WorkConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\WorkConfigForm.Designer.cs">
+      <DependentUpon>WorkConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileManage.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Control\FilterCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\FilterCtrl.designer.cs">
+      <DependentUpon>FilterCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FocusPoint.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IntellPointSel.cs" />
+    <Compile Include="DLG\IntellSelPoitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\IntellSelPoitForm.Designer.cs">
+      <DependentUpon>IntellSelPoitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLG\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLG\MutiplySetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\MutiplySetForm.Designer.cs">
+      <DependentUpon>MutiplySetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PointAnlysePicBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PointSet.cs" />
+    <Compile Include="PointTrain.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DLG\SharpPointForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLG\SharpPointForm.designer.cs">
+      <DependentUpon>SharpPointForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Control\FilterCtrl.resx">
+      <DependentUpon>FilterCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\CutImageConfig.resx">
+      <DependentUpon>CutImageConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\IntellSelPoitForm.resx">
+      <DependentUpon>IntellSelPoitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\MutiplySetForm.resx">
+      <DependentUpon>MutiplySetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\PjtConfigForm.resx">
+      <DependentUpon>PjtConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\PjtNameSetForm.resx">
+      <DependentUpon>PjtNameSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLG\WorkConfigForm.resx">
+      <DependentUpon>WorkConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DLG\SharpPointForm.resx">
+      <DependentUpon>SharpPointForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FocusRmbApi\Focus.csproj">
+      <Project>{3A6206CF-C405-49B9-8BFF-FBEF62D84E21}</Project>
+      <Name>Focus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

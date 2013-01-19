@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<C54XXOpenConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <format>C54XX</format>
+  <lightNum>Single</lightNum>
+  <Output>IrGreen</Output>
+  <reviseMode>Penetrate</reviseMode>
+  <basicImg>Ir</basicImg>
+  <irEqual>false</irEqual>
+  <irNeighbor>false</irNeighbor>
+  <grEqual>false</grEqual>
+  <grNeighbor>false</grNeighbor>
+</C54XXOpenConfig>

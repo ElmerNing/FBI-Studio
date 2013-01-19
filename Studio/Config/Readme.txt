@@ -1,0 +1,3 @@
+1，C54XXOpenConfig.xml 为打开C54XX格式图片进行配置，修改irEqual属性可以改变打开图片是为原图或者均衡化之后的图。
+2，DM642OpenConfig.xml 为打开DM642格式图片进行配置，各种属性的说明详见的OpenConfig.cs文件。
+3，workconfig.xml 为各种钱币项目配置的图片目录和点文件目录的路径。

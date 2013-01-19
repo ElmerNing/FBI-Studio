@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Drawing;
+namespace FBI_Studio
+{
+    class ListViewNF : System.Windows.Forms.ListView
+    {
+        //ImageList性能太差，所以加多List<Image>
+        public List<Image> ImageListNF = new List<Image>();
+
+        public ListViewNF()
+        {
+            // Activate double buffering
+            this.SetStyle( ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+
+            // Enable the OnNotifyMessage event so we get a chance to filter out 
+            // Windows messages before they get to the form's WndProc
+            this.SetStyle(ControlStyles.EnableNotifyMessage, true);
+        }
+
+        protected override void OnNotifyMessage(Message m)
+        {
+            //Filter out the WM_ERASEBKGND message
+            if (m.Msg != 0x14)
+            {
+                base.OnNotifyMessage(m);
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DM642OpenConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <format>DM642</format>
+  <lightNum>Triple</lightNum>
+  <Output>All</Output>
+  <reviseMode>Penetrate</reviseMode>
+  <basicImg>Ir</basicImg>
+  <irEqual>true</irEqual>
+  <irNeighbor>true</irNeighbor>
+  <uvgrEqual>true</uvgrEqual>
+  <uvgrNeighbor>true</uvgrNeighbor>
+</DM642OpenConfig>
